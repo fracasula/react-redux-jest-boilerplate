@@ -13,3 +13,22 @@ There's also [snapshot testing](https://facebook.github.io/jest/docs/snapshot-te
 Remember snapshots are meant to be pushed in the repository so that your tests can fail if a change happens.
 It's a very useful tool whenever you want to make sure your UI does not change unexpectedly.
 After your tests fail you can review the change and resubmit the new snapshot if it contains only expected changes.
+
+## To get started
+
+You can use a local node/npm installation but I suggest using a single-run docker container for development purposes.
+You could use something like [this](https://github.com/fracasula/mean-docker) or make your own if you want to expose different ports and add different features.
+
+* `npm install` *OR*
+  * `docker run -it --rm -v $(pwd):/data -p 49160:8000 mean-docker npm install`
+* `npm start` *OR*
+  * `docker run -it --rm -v $(pwd):/data -p 49160:8000 mean-docker npm start`
+
+The local server is now running. Check by going to [http://localhost:49160/](http://localhost:49160/)
+
+To run the tests:
+
+* `npm test` *OR*
+  * `docker run -it --rm -v $(pwd):/data -p 49160:8000 mean-docker npm test`
+  
+Enjoy **:-D**
