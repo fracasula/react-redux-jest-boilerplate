@@ -1,0 +1,20 @@
+exports[`test Home snapshot 1`] = `
+<div>
+  <div
+    className="App-search-box">
+    <input
+      className="App-search-box-input"
+      onKeyPress={[Function]}
+      placeholder="Search..."
+      readOnly={false}
+      type="text" />
+    <button
+      className="App-search-box-btn"
+      disabled={false}
+      onClick={[Function]}>
+      Search
+    </button>
+  </div>
+  
+</div>
+`;
